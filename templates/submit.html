@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART LENDER - Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SMART LENDER</h1>
+    <h2>Loan Eligibility Prediction Result</h2>
+
+    <div class="result-card">
+
+        <h3>Prediction Status</h3>
+
+        <p class="prediction">
+            {{ prediction }}
+        </p>
+
+    </div>
+
+    <div class="button-group">
+
+        <a href="/">
+            <button type="button">🏠 Home</button>
+        </a>
+
+        <a href="/predict">
+            <button type="button">🔄 Predict Again</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
